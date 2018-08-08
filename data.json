@@ -1,0 +1,4 @@
+{
+    "messageChars": ["a", "b", "c"],
+    "encryptionChars": ["x", "y", "z"]
+}

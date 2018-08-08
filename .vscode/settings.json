@@ -1,0 +1,10 @@
+{
+    "files.autoSave": "afterDelay",
+    "editor.fontSize": 16,
+    "editor.fontFamily": "Droid Sans Mono",
+    "editor.fontWeight": "normal",
+    "editor.tabSize": 4,
+    "editor.minimap.enabled": false,
+    "workbench.colorTheme": "One Dark Pro Vivid",
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+}

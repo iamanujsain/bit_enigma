@@ -1,0 +1,48 @@
+body{
+    margin: 3px;
+    font-family: 'georgia', 'sans-serif';
+    font-size: 100%;
+}
+.container{
+    width: 100%;
+    display: flex;
+}
+.settings{
+    width: 33%;
+    height: 100%;
+    padding-right: 1px; 
+    border-right: 2px solid black; 
+    letter-spacing: 2pt;
+}
+.settings .table-container{
+    width: fit-content;
+}
+#encryption-data-table{
+    width: 100%;
+    table-layout: auto;
+    letter-spacing: 1pt;
+    font-weight: bold;
+}
+.texts{
+    height: 100%;
+    flex-grow: 1;
+    padding-left: 10px;
+    border-left: 2px solid black;
+}
+.texts .message-container{
+    width: 100%;
+}
+#input{
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    width: 100%;
+    height: 50%;
+}
+#output{
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    width: 100%;
+    height: 50%;
+}

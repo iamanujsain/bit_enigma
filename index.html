@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>enigma machine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- left side-bar -->
+        <div class="settings">
+            <h3>Create Encription Settings</h3>
+            <div class="table-container">
+                <table id="encryption-data-table">
+                    <tr>
+                        <th>Message Text</th>
+                        <th>Encrypt Text</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- main work area -->
+        <div class="texts">
+            <div>
+                <h2>try-out your encryption</h2>
+                <div class="message-container">
+                    <textarea name="message" id="input" placeholder="user message"></textarea>
+                    <textarea name="encrytion" id="output" placeholder="encryption message" readonly></textarea>
+                    <!-- <input type="text" name="message" id="input">
+                    <input type="text" name="encryption" id="output"> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="./style.css">
+
+</body>
+
+</html>
