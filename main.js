@@ -3,28 +3,47 @@
 let msgC = [ "a", "b", "c" ];
 let encC = [ "x", "y", "z" ];
 
-// take input from id=input textarea
-var input_box = document.getElementById("input");
+// take input from id=input textarea and show output from id=output textarea
+let input = document.getElementById("input");
 
-
-
-
-// create encryption using msgC and encC
-
-
-
-
-
-
-
-// show output from id=output textarea
-input_box.onkeyup = () => {
-    document.getElementById("output").innerHTML = input_box.value;
+input.onkeyup = (e) => {
+    
+    if (e.keyCode == 8) {
+        let _cur = input.value;
+        let _result = "";
+        for (let i = 0; i < _cur.length; i++) {
+            let _d = encrypt(_cur.charAt(i));
+            _result = _result.concat((_d == undefined) ? '':_d);
+        }
+        document.getElementById("output").value = _result;
+    }
+    
+    if (e.keyCode >= 65 && e.keyCode <= 90) {
+        let _cur = input.value;
+        let _result = "";
+        for (let i = 0; i < _cur.length; i++) {
+            let _d = encrypt(_cur.charAt(i));
+            _result = _result.concat((_d == undefined) ? '':_d);
+        }
+        document.getElementById('output').value = _result;
+    }
 }
 
 
 
-
+// create encryption using msgC and encC
+function encrypt(c) {
+    let i, output;
+    msgC.forEach((e) => {
+        if (e == c) {
+            i = msgC.indexOf(e);
+            if (encC[i]!=undefined) {
+                output = encC[i].toString();
+            } 
+        }        
+    });
+    return output;
+}
 
 
 // visuals of encryption table as of each variation of JSON file
