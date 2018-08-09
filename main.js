@@ -4,8 +4,7 @@ let msgC = [ "a", "b", "c" ];
 let encC = [ "x", "y", "z" ];
 
 // take input from id=input textarea
-
-
+var input_box = document.getElementById("input");
 
 
 
@@ -19,7 +18,9 @@ let encC = [ "x", "y", "z" ];
 
 
 // show output from id=output textarea
-
+input_box.onkeyup = () => {
+    document.getElementById("output").innerHTML = input_box.value;
+}
 
 
 
